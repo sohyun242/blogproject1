@@ -21,3 +21,9 @@ def create(request):
     blog.save()
     return redirect('/blog/'+str(blog.id)) # 함수들 다 처리하고 이 url로 이동하세요라는 뜻
     #blog.id는 인트형인데 str은 문자열이니까 문자열로 변환시켜준거 그래서 str(blog.id)써준거
+
+def cover(request):
+    return render(request, 'cover.html')
+
+def one(request):
+    return render(request, 'one.html')
